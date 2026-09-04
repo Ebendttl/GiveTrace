@@ -21,7 +21,7 @@ interface DonationFormProps {
 }
 
 export const DonationForm: React.FC<DonationFormProps> = ({ cause }) => {
-  const router = Router = useRouter();
+  const router = useRouter();
   const { connection } = useConnection();
   const { publicKey, sendTransaction, connected } = useWallet();
 
