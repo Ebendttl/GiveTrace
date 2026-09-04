@@ -45,7 +45,7 @@ export default function ImpactPage() {
           },
           source: 'mock',
         });
-      } fontFinally: {
+      } finally {
         setLoading(false);
       }
     }
