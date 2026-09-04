@@ -92,7 +92,7 @@ export const MatchmakerChat: React.FC = () => {
           <div>
             <h2 className="text-xl sm:text-2xl font-bold text-stone-900">AI Cause Matchmaker</h2>
             <p className="text-xs sm:text-sm text-stone-500">
-              Describe your passions — Gemini will analyze and rank causes aligned with your values.
+              Describe your passions. Gemini will analyze and rank causes aligned with your values.
             </p>
           </div>
         </div>

@@ -48,7 +48,7 @@ export const WalletConnectButton: React.FC = () => {
           className="inline-flex items-center gap-1.5 text-xs text-amber-700 hover:text-amber-900 font-medium underline mt-1"
         >
           <Download className="w-3.5 h-3.5" aria-hidden="true" />
-          <span>Phantom Wallet not detected — click here to install</span>
+          <span>Phantom Wallet not detected. Click here to install</span>
         </a>
       )}
     </div>
