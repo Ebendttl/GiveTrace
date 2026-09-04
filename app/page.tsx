@@ -24,8 +24,8 @@ export default function HomePage() {
             Transparent Micro-Giving Matching Donors with <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-brand-500">Radical Impact</span>.
           </h1>
 
-          <p className="text-base sm:text-xl text-stone-300 font-normal leading-relaxed">
-            GiveTrace is a transparent micro-giving platform where donors are AI-matched to causes, give real (devnet) crypto donations with an on-chain, publicly verifiable receipt, and receive a personalized, narrated thank-you — built for accessibility and radical transparency.
+          <p className="text-base sm:text-xl text-stone-300 font-normal leading-relaxed max-w-[60ch]">
+            GiveTrace matches donors to causes via AI, enables verifiable Devnet Solana micro-donations, and delivers accessible audio thank-you narratives.
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
@@ -50,34 +50,31 @@ export default function HomePage() {
 
       {/* 3-Step Visual Workflow */}
       <section className="space-y-8">
-        <div className="text-center max-w-2xl mx-auto space-y-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
-            Simple 3-Step Flow
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-stone-900">How GiveTrace Works</h2>
-          <p className="text-sm text-stone-600">
+        <div className="max-w-2xl space-y-2">
+          <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-stone-900">How GiveTrace Works</h2>
+          <p className="text-base text-stone-600">
             From intuitive intent matching to immutable blockchain receipts and audio accessibility.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Step 1 */}
-          <div className="bg-white border border-stone-200 rounded-2xl p-6 shadow-sm space-y-4 relative">
-            <div className="w-12 h-12 bg-amber-100 text-brand-700 rounded-xl flex items-center justify-center font-extrabold text-xl">
+          <div className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-white border border-amber-200/80 rounded-2xl p-6 shadow-xs space-y-4">
+            <div className="w-10 h-10 bg-amber-500 text-stone-950 rounded-xl flex items-center justify-center font-extrabold text-base shadow-xs">
               1
             </div>
             <h3 className="text-lg font-bold text-stone-900 flex items-center gap-2">
               <span>Match</span>
-              <Sparkles className="w-4 h-4 text-brand-600" />
+              <Sparkles className="w-4 h-4 text-amber-600" />
             </h3>
             <p className="text-sm text-stone-600 leading-relaxed">
-              Describe what you care about in natural language. Google Gemini 2.5 Flash analyzes registered causes and recommends personalized matches with reasoning.
+              Describe your passions in natural language. Google Gemini analyzes registered causes and recommends personalized matches with clear reasoning.
             </p>
           </div>
 
           {/* Step 2 */}
-          <div className="bg-white border border-stone-200 rounded-2xl p-6 shadow-sm space-y-4 relative">
-            <div className="w-12 h-12 bg-teal-100 text-teal-800 rounded-xl flex items-center justify-center font-extrabold text-xl">
+          <div className="bg-gradient-to-br from-teal-500/10 via-teal-500/5 to-white border border-teal-200/80 rounded-2xl p-6 shadow-xs space-y-4">
+            <div className="w-10 h-10 bg-teal-700 text-white rounded-xl flex items-center justify-center font-extrabold text-base shadow-xs">
               2
             </div>
             <h3 className="text-lg font-bold text-stone-900 flex items-center gap-2">
@@ -90,8 +87,8 @@ export default function HomePage() {
           </div>
 
           {/* Step 3 */}
-          <div className="bg-white border border-stone-200 rounded-2xl p-6 shadow-sm space-y-4 relative">
-            <div className="w-12 h-12 bg-purple-100 text-purple-800 rounded-xl flex items-center justify-center font-extrabold text-xl">
+          <div className="bg-gradient-to-br from-purple-500/10 via-purple-500/5 to-white border border-purple-200/80 rounded-2xl p-6 shadow-xs space-y-4">
+            <div className="w-10 h-10 bg-purple-700 text-white rounded-xl flex items-center justify-center font-extrabold text-base shadow-xs">
               3
             </div>
             <h3 className="text-lg font-bold text-stone-900 flex items-center gap-2">
