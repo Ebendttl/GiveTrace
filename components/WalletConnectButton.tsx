@@ -6,15 +6,33 @@ import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import { AlertTriangle, Download } from 'lucide-react';
 
 export const WalletConnectButton: React.FC = () => {
-  const { connected, wallet } = useWallet();
+  const { connected } = useWallet();
+  const [mounted, setMounted] = useState<boolean>(false);
   const [isPhantomInstalled, setIsPhantomInstalled] = useState<boolean>(true);
 
   useEffect(() => {
+    setMounted(true);
     if (typeof window !== 'undefined') {
       const isPhantom = !!(window as any).solana?.isPhantom;
       setIsPhantomInstalled(isPhantom);
     }
   }, []);
+
+  if (!mounted) {
+    return (
+      <div className="flex flex-col items-start gap-2">
+        <div className="custom-wallet-btn-wrapper">
+          <button
+            type="button"
+            className="!bg-brand-600 !text-white !font-semibold !rounded-xl !px-5 !py-2.5 !h-auto !text-sm shadow-sm cursor-wait opacity-90"
+            disabled
+          >
+            Select Wallet
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col items-start gap-2">
